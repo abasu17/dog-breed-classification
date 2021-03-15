@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import json, requests
-from src.service import *
+from service import *
 
 
 class Form(BaseModel):

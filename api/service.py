@@ -37,7 +37,7 @@ class Prediction:
         model.add(ResNet50(include_top = True, pooling = "avg", weights = "imagenet"))
         model.add(Dense(self.CLASSES, activation = self.DENSE_ACTIVATION))
         model.layers[0].trainable = False
-        model.load_weights("./src/model/new_model.hdf5")
+        model.load_weights("./model/new_model.hdf5")
 
 
     def save_image(self, image):
